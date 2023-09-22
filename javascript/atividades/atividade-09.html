@@ -1,0 +1,22 @@
+
+
+
+<script>
+
+    let idade = prompt('Digite a sua idade: ', '');
+    let autorizacao = prompt('Voce tem a autorização dos pais: ', '');
+
+    if(idade >= 18 && autorizacao === 'sim'){
+
+        document.write('<b>Idade:</b> ' + idade);
+        document.write('<br><b><font color=blue> Pode entra </font><b>');
+
+    }else{
+
+        document.write('<b>Idade:</b> ' + idade);
+        document.write('<br><b><font color=red> nao pode entra </font></b>');
+
+    }
+
+
+</script>

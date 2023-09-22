@@ -1,0 +1,30 @@
+
+
+
+<script>
+
+    let ponta1 = prompt('Digite um de uma das ponta do triangulo: ', '');
+    let ponta2 = prompt('Digite um de uma das ponta do triangulo: ', '');
+    let ponta3 = prompt('Digite um de uma das ponta do triangulo: ', '');
+
+    ponta1 = parseFloat(ponta1);
+    ponta2 = parseFloat(ponta2);
+    ponta3 = parseFloat(ponta3);
+
+    
+    document.write('<br>ponta1: ', ponta1);
+    document.write('<br>ponta2: ', ponta2);
+    document.write('<br>ponta3: ', ponta3);
+
+    if( ponta1 == ponta2 && ponta3 == ponta1 && ponta3){
+        document.write('Todos os lados são iguais esse triangulo  <font color=blue><b> é um triangulo Equilátero</b></font>');
+
+    } else if (ponta1 == ponta2 || ponta3 == ponta1 || ponta3) {
+        document.write('Apenas um lado é igual <font color=blue><b> é um triangulo isósceles</b></font>');
+
+    } else {
+        document.write('Todos os lados são diferentes <font color=blue><b>é um triangulo escaleno</b></font>');
+    }
+
+
+</script>
