@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<body>
+
+    <h1>Funções de callback em JavaScrip</h1>
+    
+    <button id="meuBotao" onclick="mostraMensagem()">Alterar fundo para vermelho</button>
+    <button id="meuBotao1" onclick="mostraMensagem1()">Alterar fundo para banco</button><br>
+    <button id="meuBotao2" onclick="mostraMensagem2()">Mensagem no alert</button>
+    <button id="meuBotao3" onclick="mostraMensagem3()">Mensagem na pagina</button>
+    
+    <script>
+
+        function mostraMensagem(){
+            var body = document.body;
+            document.bgColor = "red"
+        }
+
+        function mostraMensagem1(){
+            var body = document.body;
+            document.bgColor = "white"
+        }
+
+        function mostraMensagem2(){
+            alert('Que aula show! "\n" O Cristiano é demais!');  
+        }
+
+        function mostraMensagem3(){
+            document.write('<h1>Adoro JavaScript!</h1>');
+        }
+
+    </script>
+
+
+</body>
+</html>

@@ -1,25 +1,120 @@
-<script>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de frutas</title>
 
-    let dia = parseInt(prompt('Nome dafruta em português: ', ''));
-    let fruta_ingles;
+    <script>
+        let fruta = prompt('Digite o nome da fruta');
+        let fruta_ingles;
+        
+    
+        switch (fruta){
+            case 'abacaxi':
+            fruta_ingles = 'Pineaple';
+                document.write('Nome da Fruta '+ fruta);       
+                document.write('<br>Nome da fruta em ingles '+ fruta_ingles);
+                document.write('<img src=imagens/abacaxi.jpg width=200>');                
+                break;
+             case 'banana':
+                fruta_ingles ='Banana';
+                document.write('Nome da Fruta '+ fruta);       
+                document.write('<br>Nome da fruta em ingles '+ fruta_ingles);
+                document.write('<img src=imagens/banana.jpg width=200>');
+                break;
+             case 'caqui':
+                fruta_ingles = 'persimmon';
+                document.write('Nome da Fruta '+ fruta);       
+                document.write('<br>Nome da fruta em ingles '+ fruta_ingles);
+                document.write('<img src=imagens/caqui.jpg width=200>'); 
+                break;
+                case 'coco':
+                    fruta_ingles = 'Coconut';
+                    document.write('Nome da Fruta '+ fruta);       
+                document.write('<br>Nome da fruta em ingles '+ fruta_ingles);
+                document.write('<img src=imagens/coco.jpg width=200>');
+                break;
+                case 'goiaba':
+                    fruta_ingles = 'Guava';
+                    document.write('Nome da Fruta '+ fruta);       
+                document.write('<br>Nome da fruta em ingles '+ fruta_ingles);
+                document.write('<img src=imagens/goiaba.jpg width=200>');
+                break;
+                case 'laranja':
+                    fruta_ingles = 'Orange';
+                    document.write('Nome da Fruta '+ fruta);       
+                document.write('<br>Nome da fruta em ingles '+ fruta_ingles);
+                document.write('<img src=imagens/laranja.jpg width=200>');
+                break;
+                case "maça":
+                    fruta_ingles = 'Apple';
+                    document.write('Nome da Fruta '+ fruta);
+                    document.write('<br>Nome da fruta em ingles '+ fruta_ingles);
+                    document.write('<img src=imagens/maca.jpg width=200>');
+                    break;
+                case 'mamao':
+                    fruta_ingles ='Papaya';
+                    document.write('Nome da Fruta '+ fruta);
+                    document.write('<br>Nome da fruta em ingles '+ fruta_ingles);
+                    document.write('<img src=imagens/mamao.jpg width=200>');
+                    break;
+                case 'manga':
+                    fruta_ingles = 'Mango';
+                    document.write('Nome da Fruta '+ fruta);
+                    document.write('<br>Nome da fruta em ingles'+ fruta_ingles);
+                    document.write('<img src=imagens/manga.jpg width=200>');
+                    break;
+                case 'melancia':
+                    fruta_ingles = 'Watermelon';
+                    document.write('Nome da Fruta '+ fruta);
+                    document.write('<br>Nome da fruta em ingles'+ fruta_ingles);
+                    document.write('<img src=imagens/melancia.jpg width=200>');
+                    break;
+                case 'melao':
+                    fruta_ingles ='Cantalupe';
+                    document.write('Nome da Fruta '+ fruta);
+                    document.write('<br>Nome da fruta em ingles'+ fruta_ingles);
+                    document.write('<img src=imagens/melao.jpg width=200>');
+                    break;
+                case 'morango':
+                    fruta_ingles = 'Strawberry';
+                    document.write('Nome da Fruta '+ fruta);
+                    document.write('<br>Nome da fruta em ingles'+ fruta_ingles);
+                    document.write('<img src=imagens/morango.jpg width=200>');
+                    break;
+                case 'pera':
+                    fruta_ingles ='Pear';
+                    document.write('Nome da Fruta '+ fruta);
+                    document.write('<br>Nome da fruta em ingles'+ fruta_ingles);
+                    document.write('<img src=imagens/pera.jpg width=200>'); 
+                    break;
+                case 'tangerina':
+                    fruta_ingles = 'Tangerine ';
+                    document.write('Nome da Fruta '+ fruta);
+                    document.write('<br>Nome da fruta em ingles '+ fruta_ingles);
+                    document.write('<img src=imagens/tangerina.jpg width=200>');
+                    break;
+                case 'uva':
+                    fruta_ingles =' Greape ';
+                    document.write('Nome da Fruta '+ fruta);
+                    document.write('<br>Nome da fruta em ingles '+ fruta_ingles);
+                    document.write('<img src=imagens/uva.jpg width=200>');
+                    break;  
+                    
+                    default:
+                    document.write('Nome da Fruta '+ fruta);
+                    document.write('<br>Nome da fruta em ingles'+ fruta_ingles);
+                    document.write('<img src=imagens/caixa.jpg width=200>');                    
+ 
+        }
+        
+    
+    </script>
 
-    switch (fruta) {
+</head>
+<body>
+    
+</body>
+</html>
 
-        case 'uva':
-            fruta_ingles = grape;
-            document.write('nome da fruta em ingles:' + fruta_ingles);
-            document.write('')
-
-        case 'goiaba':
-            fruta_ingles = guava;
-            document.write('nome da fruta em ingles:' + fruta_ingles)
-            break;
-
-        default:
-            fruta = '';
-
-    }
-
-    document.write('<br> Fruta');
-
-</script>

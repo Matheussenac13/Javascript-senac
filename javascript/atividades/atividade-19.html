@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quiz </title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+<script>
+
+    let = alert('Seja Bem-vindo!\nResponda as questões com o NÚMERO da alternativa CORRETA:');
+    let pergunta_1 = parseFloat(prompt('Pergunta 1:\nComo mudar a letra digitada em MINÚSCULA para MAIÚSCULA?\n1) let\n2) toLowerCase \n3) toUpperCase\n4) string ', ''));
+    let pergunta_2 = parseFloat(prompt('Pergunta 2:\nComo mudar a letra digitada em MAIÚSCULA para MINÚSCULA?\n1) let\n2) toUpperCase \n3) toconsta\n4) toLowerCase ', ''));
+    let pergunta_3 = parseFloat(prompt('Pergunta 3:\nQual a forma correta de somar 2 números?\n1) n1+n2\n2) (N1+N2) \n3) (n1+n2)\n4) n1/*n2 ', ''));
+    let pergunta_4 = parseFloat(prompt('Pergunta 5:\nQual a forma correta de inserir um texto no corpo da página?\n1) console\n2) console/log\n3) console.write\n4) console.log ', ''));
+    let pergunta_5 = parseFloat(prompt('Pergunta 5:\nQual a forma correta de inserir um console?\n1) console\n2) console/log\n3) console.write\n4) console.log ', ''));
+
+    document.write('<b>Resultado<br><br></b>');
+    document.write('Pergunta 1:<br>Como mudar a letra digitada em MINÚSCULA para MAIÚSCULA?<br>Alternativa correta:<font color=blue>3<br></font>Sua Resposta:' + pergunta_1 + '<br>');
+    document.write('<br>Pergunta 2:<br>Como mudar a letra digitada em MAIÚSCULA para MINÚSCULA?<br>Alternativa correta:<font color=blue>4<br></font>Sua resposta:' + pergunta_2 + '<br>');
+    document.write('<br>Pergunta 3:<br>Qual a forma correta de somar 2 números?<br>Alternativa correta:<font color=blue>3<br></font>Sua resposta:' + pergunta_3 + '<br>');
+    document.write('<br>Pergunta 4:<br>Qual a forma correta de inserir um texto no corpo da página?<br>Alternativa correta:<font color=blue>1<br></font>Sua resposta:' + pergunta_4 + '<br>');
+    document.write('<br>Pergunta 5:<br>Qual a forma correta de inserir um console?<br>Alternativa correta:<font color=blue>4<br></font>Sua resposta:' + pergunta_5 +'<br>');
+    
+
+    let r1 = 0;
+    let r2 = 0;
+    let r3 = 0;
+    let r4 = 0;
+    let r5 = 0;
+
+    
+
+    if (pergunta_1 === 3) {
+        r1 = 1;
+    }
+
+    if (pergunta_2 === 4) {
+        r2 = 1;
+    }
+
+    if (pergunta_3 === 3) {
+        r3 = 1;
+    }
+
+    if (pergunta_4 === 1) {
+        r4 = 1;
+    }
+
+    if (pergunta_5 === 4) {
+        r5 = 1;
+    }
+
+    let soma = r1 + r2 + r3 + r4 + r5;
+    
+    document.write('<br>Pontos: ' + soma );
+
+</script>
