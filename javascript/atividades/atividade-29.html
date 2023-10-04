@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 29</title>
+
+
+
+</head>
+
+<body>
+
+    <script>
+
+        function negativo1() {
+            document.getElementById('sorteioBolinhas1').innerHTML = 'X'
+        }
+
+        function negativo2() {
+            document.getElementById('sorteioBolinhas2').innerHTML = 'X'
+        }
+
+        function premiado() {
+            document.getElementById('sorteioBolinhas3').innerHTML = 'PREMIADO'
+        }
+
+        function negativo3() {
+            document.getElementById('sorteioBolinhas4').innerHTML = 'X'
+        }
+
+        function negativo4() {
+            document.getElementById('sorteioBolinhas5').innerHTML = 'X'
+        }
+
+    </script>
+
+    <div style="display: flex; justify-content: center; margin-top: 250px;">
+
+        <div onclick="negativo1()" style="background-color: blue; width: 350px; height: 350px; border-radius: 50%;">
+            <p id="sorteioBolinhas1" style="text-align: center; margin-top: 145px; font-size: 50px;"></p>
+        </div>
+
+        <div onclick="negativo2()"
+            style="background-color: rgb(139, 139, 139); width: 350px; height: 350px; border-radius: 50%;">
+            <p id="sorteioBolinhas2" style="text-align: center; margin-top: 145px; font-size: 50px;"></p>
+        </div>
+
+        <div onclick="premiado()" style="background-color: green; width: 350px; height: 350px; border-radius: 50%;">
+            <p id="sorteioBolinhas3" style="text-align: center; margin-top: 145px; font-size: 50px;"></p>
+        </div>
+
+        <div onclick="negativo3()"
+            style="background-color: rgb(255, 222, 11); width: 350px; height: 350px; border-radius: 50%;">
+            <p id="sorteioBolinhas4" style="text-align: center; margin-top: 145px; font-size: 50px;"></p>
+        </div>
+
+        <div onclick="negativo4()" style="background-color: aqua; width: 350px; height: 350px; border-radius: 50%;">
+            <p id="sorteioBolinhas5" style="text-align: center; margin-top: 145px; font-size: 50px;"></p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
