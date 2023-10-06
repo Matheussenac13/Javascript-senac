@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contador</title>
+
+</head>
+
+<body>
+
+    <style>
+
+        .texto{
+            color: #0a0a0a;
+            text-align: center;
+        }
+
+        .caixa_texto{
+            font-size: 20px;
+            text-align: center;
+            background-color:#ffeaad;
+            font-weight: bold;
+            border-radius: 5px;
+            border: 0px;
+            box-shadow: 1px 2px 3px 2px #ccc;
+            padding-left: 5px;
+        }
+
+        .btn{
+            background-color: black;
+            color: white;
+            width: 100px;
+            border-radius: 5px;
+            box-shadow: 1px 2px 3px 2px #ccc;
+        }
+
+        .btn:hover{
+            background-color: rgb(112, 105, 105);
+        }
+
+        .tabela{
+            border: 1px solid #000;
+            border-radius: 10px;
+            width: 300px;
+        }
+
+        .linha{
+
+            background-color: rgb(14, 13, 14);
+            height: 30px;
+            color: #fff;
+            text-align: center;
+            border-radius: 15px;
+
+        }
+
+         </style>
+
+ 
+
+ 
+
+    <tAble border="0" align="center" class="tabela">
+
+        <tr>
+            <td colspan="2" class="linha"><span class="linha"><b>Manipulação de DOM com JavaScript </b></span></td>
+        </tr>
+
+        <tr>
+            <td colspan="2">&nbsp;&nbsp;<b>Contador:</b></td>
+        </tr>
+
+        <tr align="center" bgcolor="#fff" height="40">
+            <td colspan="2"><input disabled="disabled" type="text" class="caixa_texto" id="contador" value="0"></td>
+        </tr>
+
+        <tr align="center">
+
+            <td><button class="btn" id="incrementar" onclick="incrementarContador()">Incrementar</button></td>
+            <td><button class="btn" id="decrementar" onclick="decrementarContador()">Decrementar</button></td>
+
+        </tr>
+
+        <tr>
+
+            <td colspan="2"><b>&nbsp;&nbsp;Desenvolvedor: Your Name</b></td>
+
+        </tr>
+
+    </tAble>
+
+
+    <script>
+
+        // Função para incrementar o contador
+
+        function incrementarContador() {
+
+            // Obtém o valor atual da caixa de texto, converte para número e incrementa
+
+            let contadorInput = document.getElementById('contador');
+
+            let valorAtual = parseInt(contadorInput.value);
+
+            valorAtual++;
+
+            contadorInput.value = valorAtual;
+
+        }
+
+ 
+
+        // Função para decrementar o contador
+
+        function decrementarContador() {
+
+            // Obtém o valor atual da caixa de texto, converte para número e decrementa
+
+            let contadorInput = document.getElementById('contador');
+
+            let valorAtual = parseInt(contadorInput.value);
+
+            valorAtual--;
+
+            contadorInput.value = valorAtual;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
