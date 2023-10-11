@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Relogio </title>
+
+
+</head>
+
+<body>
+
+    <style>
+        body {
+            background-image: radial-gradient(circle, #ff0000 0%, #000000 100%);
+        }
+
+        /* estilização da caixa relogio */
+        #relogio {
+            background-color: gray;
+            border-radius: 20px;
+            width: 550px;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 300px;
+            margin-left: 650px;
+            box-shadow: 0 0 30px rgb(255, 0, 0);
+        }
+
+        /* estilização da dos numeros */
+        .horas,
+        .minutos,
+        .segundos {
+            font-size: 70px;
+            font-style: italic;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: red;
+            color: white;
+            border-radius: 10px;
+            padding: 10px;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            box-shadow: 0 0 20px rgb(0, 0, 0);
+        }
+
+        .caixa1 {
+            width: 450px;
+            height: 110px;
+            margin-top: 30px;
+            margin-left: 100px;
+        }
+
+        .name h2 {
+            text-align: center;
+            height: 40px;
+            width: 250px;
+            border: 1px solid black;
+            margin-left: 750px;
+            color: white;
+        }
+
+        .name {
+            margin-top: 100px;
+        }
+
+        #container-nome{
+            display: flex;
+            margin-top: 100px;
+        }
+    </style>
+    <div id="container-nome">
+        <div class="name">
+            <h2>MATHEUS ALVES</h2>
+        </div>
+    </div>
+
+    <div id="relogio">
+        <div class="caixa1">
+
+            <span id="horas" class="horas">00</span>
+            <!-- <span id="pontos">:</span> -->
+            <span id="minutos" class="minutos">00</span>
+            <!-- <span id="pontos">:</span> -->
+            <span id="segundos" class="segundos">00</span>
+
+        </div>
+    </div>
+
+    <script>
+
+        const horas = document.getElementById('horas');
+        const minutos = document.getElementById('minutos');
+        const segundos = document.getElementById('segundos');
+
+
+        const relogio = setInterval(function time() {
+
+            let dateToday = new Date();
+            let hr = dateToday.getHours();
+            let min = dateToday.getMinutes();
+            let s = dateToday.getSeconds();
+
+            if (hr < 10) hr = '0' + hr;
+
+            if (min < 10) min = '0' + min;
+
+            if (s < 10) s = '0' + s;
+
+            horas.textContent = hr;
+            minutos.textContent = min;
+            segundos.textContent = s;
+
+        })
+
+    </script>
+
+</body>
+
+</html>
