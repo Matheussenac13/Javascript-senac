@@ -18,16 +18,15 @@
 
         /* estilização da caixa relogio */
         #relogio {
-            background-color: gray;
             border-radius: 20px;
             width: 550px;
             height: 250px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 300px;
+            margin: 3px;
             margin-left: 650px;
-            box-shadow: 0 0 30px rgb(255, 0, 0);
+            box-shadow: 0 0 50px rgb(0, 0, 0);
         }
 
         /* estilização da dos numeros */
@@ -37,7 +36,7 @@
             font-size: 70px;
             font-style: italic;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            background-color: red;
+            background-color: #ff0000;
             color: white;
             border-radius: 10px;
             padding: 10px;
@@ -54,28 +53,36 @@
             margin-left: 100px;
         }
 
-        .name h2 {
-            text-align: center;
-            height: 40px;
-            width: 250px;
-            border: 1px solid black;
-            margin-left: 750px;
+        .caixa2{
+            width: 100px;
+            height: 45px; 
             color: white;
+            margin-top: 0px; 
+            margin-right: 5px; 
         }
 
         .name {
+            height: 25px;
+            width: 450px;
             margin-top: 100px;
+            margin-left: 700px;
+            color: white;
+            box-shadow: 0 0 50px black;
         }
 
         #container-nome{
             display: flex;
             margin-top: 100px;
         }
+
     </style>
+
     <div id="container-nome">
+
         <div class="name">
-            <h2>MATHEUS ALVES</h2>
+            <marquee behavior="alternate" scrollamount="10" direction=""bgcolor=red> MATHEUS   ALVES </marquee>
         </div>
+
     </div>
 
     <div id="relogio">
@@ -88,6 +95,7 @@
             <span id="segundos" class="segundos">00</span>
 
         </div>
+
     </div>
 
     <script>
