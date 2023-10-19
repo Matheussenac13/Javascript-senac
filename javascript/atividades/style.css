@@ -1,5 +1,5 @@
 body {
-    background-color: #ebe7e0;
+    background-color: #000000;
     font: 13pt Arial;
 }
 
@@ -28,7 +28,7 @@ aside {
     display: block; 
     font-size: 10pt;
     text-align: justify;
-    background-color: #094071b1;
+    background-color: #000000b1;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
