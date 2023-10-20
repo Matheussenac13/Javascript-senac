@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> atividade - 35 </title>
+    
+    <script>
+        function newtarefa() {
+            let tarefa = Array()
+            tarefa = document.getElementById('tarefa').value;
+            
+            if (tarefa == '') {
+                alert('Insira uma tarefa');
+            return;
+            } else {
+                
+                let resultado = document.getElementById('resultado').innerHTML += '<br>' + tarefa;
+        }
+            
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Lista de Tarefas</h1>
+
+    <form action="#">
+
+        <label for="tarefa">Nome da tarefa:</label>
+        <input type="text" id="tarefa" name="tarefa" placeholder="Insira uma tarefa">
+        <input type="submit" onclick="newtarefa()">
+    </form>
+    <div>
+        <p id="resultado"></p>
+    </div>
+</body>
+
+</html>
